@@ -1,0 +1,28 @@
+/* Keep the workflow presentation intentionally simple, matching its original version. */
+.workflow-showcase {
+  min-height: 620px;
+  background: #fff;
+}
+
+.workflow-showcase::before,
+.showcase-media::before,
+.showcase-media::after {
+  display: none;
+}
+
+.showcase-media {
+  position: relative;
+  background: transparent;
+}
+
+.showcase-base {
+  opacity: 1;
+  mix-blend-mode: multiply;
+  filter: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+@media (max-width: 800px) {
+  .workflow-showcase { min-height: 650px; }
+}
